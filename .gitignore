@@ -1,0 +1,14 @@
+# https://git-scm.com/docs/gitignore
+# https://help.github.com/articles/ignoring-files
+# Example .gitignore files: https://github.com/github/gitignore
+/bower_components/
+/node_modules/
+/www/js/index-min.js
+/www/.DS_Store
+/www/js/.DS_Store
+/www/css/
+/res/.DS_Store
+/res/splash/.DS_Store
+/res/icons/.DS_Store
+/.DS_Store
+/platforms/

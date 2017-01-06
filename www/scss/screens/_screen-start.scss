@@ -1,0 +1,34 @@
+.screen-start{
+    display: flex;
+    flex-direction: column;
+    
+    .screen-half{
+        flex-grow: 1;
+        position: relative;
+        
+        &:first-child{
+            border-bottom: 1px solid $color-gold;
+        }
+        
+        &:list-child{
+            border-top: 1px solid $color-gold;
+        }
+    }
+    
+    .center{
+        width: 200px;
+    }
+    
+    .screen-half-gfx{
+        width: 80px;
+        height: 80px;
+        margin: auto;
+        fill: white;
+    }
+    
+    .screen-half-header{
+        margin: 20px 0px;
+        text-align: center;
+    }
+    
+}

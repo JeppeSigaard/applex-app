@@ -1,0 +1,55 @@
+.screen-time{
+    display: flex;
+    flex-direction: column;
+    
+    .time-overview{
+        flex-grow: 1;
+        background: $color-dark-2; 
+        padding: 15px;
+        position: relative;
+        fill: white;
+    }
+    
+    .center{
+        width: 200px;
+    }
+    
+    .time-icon{
+        width:70px;
+        margin: 0px auto;
+    }
+    
+    .time{
+        font-size: 60px;
+        text-align: center;
+        margin: 30px 15px;
+    }
+    
+    .time-text{
+        text-align: center;
+        margin: 10px;
+        font-size: 125%;
+    }
+    
+    .tasks-completed{
+        text-align: center;
+        margin: 10px;
+    }
+    
+    
+    .close-btn{
+        border-top: 1px solid white;
+        flex-grow: 0;
+        background: #777;
+        transition: background 200ms;
+        color: white;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        text-transform: uppercase;
+        
+        &.certain{
+            background: #f44;
+        }
+    }    
+}

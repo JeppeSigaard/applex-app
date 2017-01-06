@@ -1,0 +1,35 @@
+.screen-menu{
+    display: flex;
+    flex-direction: column;
+    
+    .menu{
+        flex-grow: 0;
+    }
+    
+    .menu-item{
+        display: block;
+        background-color: $color-dark-2;
+        border-bottom: 1px solid white;
+        height:60px;
+        line-height: 60px;
+        padding: 0px 20px;
+        clear: both;
+        position: relative;
+    }
+    
+    svg{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        height: 30px;
+        width: 30px;
+        fill: white;
+    }
+    
+    .info-box {
+	    flex-grow: 1;
+        padding: 30px 20px;
+        line-height: 1.5;
+        color:#e0e0e0;
+    }  
+}

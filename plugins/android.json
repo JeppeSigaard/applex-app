@@ -1,0 +1,40 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.applex.smamo.applex"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.applex.smamo.applex"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "com.applex.smamo.applex"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.applex.smamo.applex"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.applex.smamo.applex"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.applex.smamo.applex"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.applex.smamo.applex"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.applex.smamo.applex"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.applex.smamo.applex"
+        }
+    }
+}

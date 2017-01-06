@@ -1,0 +1,210 @@
+.screen-quiz,
+.screen-quiz-login{
+    display: flex;
+    flex-direction: column;
+    
+    .find-quiz{
+        position: relative;
+        flex-grow: 1;
+        margin: auto;
+        
+        .inner{
+            @include center(true,true);
+            width: 200px;
+            
+        }
+        
+        svg{
+            height: 70px;
+            width: 70px;
+            margin: auto;
+            display: block;
+            fill: white;
+            margin-bottom: 20px;
+        }
+        
+        input[type="text"]{
+            display: block;
+            width: 100%;
+            background-color: #f0f0f0;
+            height: 50px;
+            padding: 0px 10px;
+            color: $color-dark;
+            font-size: 150%;
+            text-transform: uppercase;
+            outline: none;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        input[type="submit"]{
+            display: block;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            -webkit-appearance: none;
+            background-color: $color-gold;
+            color: $color-dark;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-size: 150%;
+            transition: background-color 50ms, color 50ms;
+            
+            &.error{
+                transition: background-color 200ms, color 200ms;
+                background-color: #f44;
+                color: white;
+            }
+            
+            &.hold{
+                transition: background-color 200ms, color 200ms;
+                background-color: #20a54e;
+                color: white;
+            }
+        }
+        
+        .hidden{
+            opacity: 0;
+        }
+        
+    }
+    
+    .info-box{
+        border-top: 1px solid white;
+        flex-grow: 0;
+        padding: 30px 20px;
+        color: #e0e0e0;
+        text-align: center;
+    }
+    
+}
+
+$list-item-height: 65px;
+#screen-32{
+    background: $color-light-3;
+    
+    .quiz-list-item {
+        height: $list-item-height;
+        overflow: hidden;
+        position: relative;
+        background: $color-light;
+        color: $color-dark;
+        clear: both;
+        border-bottom: 1px solid rgba(black,.2);
+        
+        &:nth-child(2n){
+            background: $color-light-2;
+        }
+        
+        &:after{
+            @extend %fill-all;
+            z-index: 2;
+            content: '';
+            opacity: .1;
+            background: transparent;
+            transition: background 250ms;
+        }
+        
+        &.has-beacon{
+            
+            .status-right,
+            .status-done{
+                display: none;
+            }
+            
+            .status-beacon{
+                display: block;
+            }
+            
+        }
+        
+        &.complete{
+            
+            &:after{
+                background: #20a54e;
+            }
+            
+            .item-type-icon,
+            .item-title,
+            .item-status{
+                opacity: .5;
+                
+                
+            }
+            
+            .item-status{
+                
+                i{display: block;}
+                svg{display: none;}
+            }    
+        }
+
+    }
+
+    .item-type-icon,
+    .item-status{
+        transition: opacity 250ms;
+        display: inline-block;
+        width: 45px;
+        height: $list-item-height;
+        vertical-align: top;
+        position: relative;
+        
+        svg,i{
+            width: 22px;
+            height: 22px;
+            @include center(true,true);
+            line-height: 22px;
+            text-align: center;
+            font-size: 24px;
+        }
+    }
+    
+    .item-status{
+        float: right;
+        
+        .status-beacon,
+        .status-done{
+            display: none;
+        }
+        
+    }
+
+    .item-title {
+        transition: opacity 250ms;
+        display: inline-block;
+        line-height: $list-item-height;
+        height: $list-item-height;
+        vertical-align: top;
+    }
+    
+}
+
+.screen-quiz-explore{
+    @extend .screen-explore;
+    
+    .bottom-box{
+        border-top: none;
+        padding:20px 20px 60px;
+    }
+    
+    .item-type-icon{
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        fill: white;
+        position: relative;
+        
+        svg{
+            @include center(true,true);    
+        }
+    }
+    
+    .item-title{
+        font-size: 16px;
+        color: white;
+        margin: 10px auto 0px;
+        max-width: 280px;
+        line-height: 1.6;
+    }
+}

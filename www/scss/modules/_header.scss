@@ -1,0 +1,80 @@
+.app-header{
+    background-color: $color-dark;
+    height: 50px;
+    border-top: 1px solid white;
+    border-bottom: 2px solid $color-gold;
+    position: fixed;
+    top: 20px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    
+    .logo{
+        position: relative;
+        fill: white;
+        margin: 15px 10px;
+        height: 20px;
+        width: 100px;
+    }
+    
+    .header-btn{
+        position: absolute;
+        height: 48px;
+        width: 55px;
+        right: 0;
+        top: 0;
+        border-left: 1px solid white;
+        
+        &:after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 100;
+            content: '';
+        }
+        
+        svg{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: 1px;
+            transform: translate(-50%,-50%);
+            fill: $color-gold;
+            display:none;
+            
+            &.btn-menu{
+                height: 30px;
+                width: 30px;
+            }
+            
+            &.btn-close{
+                height: 30px;
+                width: 30px;
+            }
+            
+            &.btn-back{
+                height: 27px;
+                width: 27px;    
+            }
+            
+            &.btn-pause{
+                height: 30px;
+                width: 30px;    
+            }
+            
+            &.btn-time{
+                height: 30px;
+                width: 30px;    
+            }
+        }
+        
+        &.menu svg.btn-menu{display: block;}
+        &.menu-close svg.btn-close{display: block;}
+        &.back svg.btn-back{display: block;}
+        &.pause svg.btn-pause, &.un-pause svg.btn-pause{display: block;}
+        &.time svg.btn-time{display: block;}
+        &.un-time svg.btn-back{display: block;}
+    }
+}

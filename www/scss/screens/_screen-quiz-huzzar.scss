@@ -1,0 +1,59 @@
+.screen-quiz-huzzar{
+    display: flex;
+    flex-direction: column;
+    
+    .screen-celebrate{
+        flex-grow: 1;
+        position: relative;
+        text-align: center;
+        border-bottom: 1px solid white;
+       
+        .center{
+            width: 280px;
+        }
+        
+        
+        span{
+            font-size: 70px;
+            margin: 15px auto;
+            display: block;
+        }
+        
+        h1{
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        p{
+            font-size: 13px;
+            line-height: 1.5;
+            margin-bottom: 5px;
+        }
+        
+    }
+    
+    .screen-finish{
+        flex-grow: 0;
+        
+        .menu-item{
+            display: block;
+            background-color: $color-dark-2;
+            border-bottom: 1px solid white;
+            height:60px;
+            line-height: 60px;
+            padding: 0px 20px;
+            clear: both;
+            position: relative;
+        }
+
+        svg{
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            height: 30px;
+            width: 30px;
+            fill: white;
+        }
+    }
+    
+}

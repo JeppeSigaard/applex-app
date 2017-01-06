@@ -1,0 +1,22 @@
+.debug,
+.geo-data{
+    pointer-events: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    line-height: 1.5;
+    padding: 5px;
+    background: rgba(white,.7);
+    font-size: 75%;
+    max-height: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: black;
+    word-wrap: pre;
+}
+
+.geo-data{
+   bottom: auto;
+    top: 20px;
+}
