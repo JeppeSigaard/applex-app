@@ -7,25 +7,28 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.applex.smamo.applex"
-        },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.applex.smamo.applex"
-        },
-        "ionic-plugin-keyboard": {
+        "cordova-plugin-file-transfer": {
             "PACKAGE_NAME": "com.applex.smamo.applex"
         },
         "cordova-plugin-geolocation": {
-            "PACKAGE_NAME": "com.applex.smamo.applex"
-        },
-        "cordova-plugin-file-transfer": {
             "PACKAGE_NAME": "com.applex.smamo.applex"
         },
         "cordova-plugin-media-capture": {
             "PACKAGE_NAME": "com.applex.smamo.applex"
         },
         "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.applex.smamo.applex"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.applex.smamo.applex"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.applex.smamo.applex"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.applex.smamo.applex"
+        },
+        "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.applex.smamo.applex"
         }
     },

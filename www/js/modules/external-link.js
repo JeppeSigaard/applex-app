@@ -4,7 +4,7 @@ $(document).on('click','.external-link',function(e){
         href = a.attr('href'),
         target = a.attr('target');
     
-    if(typeof target === 'udefined'){target = '_blank';}
-    window.open(href, target);
-    
+    if(typeof target === 'udefined'){target = '_system';}
+    //window.open(href, target);
+    cordova.InAppBrowser.open(href, target);
 });

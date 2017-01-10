@@ -7,28 +7,31 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.applex.smamo.applex"
-        },
-        "cordova-plugin-statusbar": {
-            "PACKAGE_NAME": "com.applex.smamo.applex"
-        },
-        "ionic-plugin-keyboard": {
+        "cordova-plugin-file-transfer": {
             "PACKAGE_NAME": "com.applex.smamo.applex"
         },
         "cordova-plugin-geolocation": {
             "PACKAGE_NAME": "com.applex.smamo.applex"
         },
-        "cordova-plugin-file-transfer": {
-            "PACKAGE_NAME": "com.applex.smamo.applex"
-        },
         "cordova-plugin-media-capture": {
-            "CAMERA_USAGE_DESCRIPTION": " ",
-            "MICROPHONE_USAGE_DESCRIPTION": " ",
-            "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
+            "CAMERA_USAGE_DESCRIPTION": "Atlex skal bruge adgang til dit kamera for at tage et billede.",
+            "MICROPHONE_USAGE_DESCRIPTION": "Atlex skal bruge adgang til din mikrofon for at optage video.",
+            "PHOTOLIBRARY_USAGE_DESCRIPTION": "Atlex skal bruge adgang til dit bibliotek for at vælge billeder og video derfra.",
             "PACKAGE_NAME": "com.applex.smamo.applex"
         },
         "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.applex.smamo.applex"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.applex.smamo.applex"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.applex.smamo.applex"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.applex.smamo.applex"
+        },
+        "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.applex.smamo.applex"
         }
     },
