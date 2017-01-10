@@ -1,6 +1,6 @@
 // Explore screen
 var explorerVars = {
-    timing : 700,
+    timing : 1000,
     triggerDistance : 4,
 };
 
@@ -113,7 +113,7 @@ var renderExplorerList = function(beaconId){
 
 $(document).on('nav',function(e, obj){if (obj.to == 20){
     
-    var timerBuffer = 5,
+    var timerBuffer = 3,
         locationInterval = setInterval(function(){
 
         
@@ -180,6 +180,5 @@ $(document).on('nav',function(e, obj){if (obj.to == 20){
     // Kill interval on headerbutton
     $('.header-btn').on('touchstart',function(){
         clearInterval(locationInterval);
-        resetAnimateDistance();
     });        
 }});

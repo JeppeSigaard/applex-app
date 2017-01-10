@@ -137,12 +137,13 @@ var quizTimer,
         quiz.generateSingle(item,itemKey);
         
         // Fetch beacon data
-        var lat = false, long = false, range = 4;
+        var lat = false, long = false, range = 4, beacon = false;
         for (var prop in data.beacons) {
             if( data.beacons.hasOwnProperty( prop ) ) {
                 var b = data.beacons[prop];
                 
                 if (b.id == item.beacon){
+                    beacon = b;
                     lat = b.lat;  
                     long = b.long;  
                     range = b.range;   
@@ -157,15 +158,14 @@ var quizTimer,
             },500);
         }
         
-        var timerBuffer = 5;
+        var timerBuffer = 3;
         
         quizTimer = setInterval(function(){
             navigator.geolocation.getCurrentPosition(function(location){
                 var plat = location.coords.latitude,
                     plong = location.coords.longitude,
                     bDist = Math.floor(app.geo.distanceTo(lat,long,plat,plong) * 10000) / 10;
-                
-                
+
                 if(parseFloat(bDist) > parseFloat(range) || timerBuffer > 0){
                     
                     var shownDistance = Math.floor((bDist - range) * 10) / 10;
@@ -174,7 +174,7 @@ var quizTimer,
                         shownDistance = '?';
                     }
                     
-                    if(shownDistance < 0){
+                    if(shownDistance <= 0){
                         shownDistance = '0.1';
                     }
 
@@ -183,20 +183,22 @@ var quizTimer,
                 }
 
                 else{
+
+                    //console.log(parseFloat(bDist) +' · '+ parseFloat(range) + ' and ' + timerBuffer);
+
                     animateDistance($('.screen-quiz-explore .meters span'), '0.0');
-                    clearInterval(locationInterval);
+                    clearInterval(quizTimer);
                     setTimeout(function(){
                         app.goTo('34',{animation : 'left'}); 
                     },200);
                 }
                 
             }, app.geo.error, {enableHighAccuracy : true});  
-        },700);
+        },1000);
         
         // Kill interval on headerbutton
         $('.header-btn').on('touchstart',function(){
             clearInterval(quizTimer);
-            resetAnimateDistance();
         });
         
     },

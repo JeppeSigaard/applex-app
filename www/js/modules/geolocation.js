@@ -1,6 +1,7 @@
 app.geo = {
     
     log : function(msg){
+        console.log(msg);
         if($('.geo-data').length){
             $('.geo-data').html(JSON.stringify(msg) + '<br/>'); 
         }

@@ -20,7 +20,7 @@ var data = {
     
     fetchBeacons : function(callback){
         
-        data.fetchPosts('/beacon/', '', function(response){
+        data.fetchPosts('/beacon/?per_page=100', '', function(response){
            if(!response.error){
                 for(var i = 0; i < response.length; i++){
                     data.beacons[i] = response[i];
@@ -34,7 +34,7 @@ var data = {
     },
     
     fetchQuiz : function(callback){
-        data.fetchPosts('/quiz/', '', function(response){
+        data.fetchPosts('/quiz/?per_page=100', '', function(response){
            
             if(!response.error){
                 for(var i = 0; i < response.length; i++){
@@ -49,7 +49,7 @@ var data = {
     },
     
     fetchOvelse : function(callback){
-        data.fetchPosts('/ovelse/', '', function(response){
+        data.fetchPosts('/ovelse/?per_page=100', '', function(response){
            
             if(!response.error){
                 for(var i = 0; i < response.length; i++){
